@@ -18,6 +18,7 @@ public class FileEntity {
     @Column(length=50,nullable=false)
     private String name;
 
+    private byte[] fileByte;
     public FileEntity(){
     }
 
@@ -38,6 +39,12 @@ public class FileEntity {
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public byte[] getFileByte() {
+        return fileByte;
+    }
+    public void setFileByte(byte[] fileByte) {
+        this.fileByte = fileByte;
     }
 
 }
